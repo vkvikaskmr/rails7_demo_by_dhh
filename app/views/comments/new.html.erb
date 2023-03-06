@@ -1,0 +1,8 @@
+<%= turbo_frame_tag "new_comment" do %>
+  <%= form_with model: [@post, Comment.new],
+  data: { controller: 'reset', action: "turbo:submit-end->reset#reset" } do |form| %>
+    Your Comment: <br>
+    <%= form.text_area :content, size: "20x5", "data-reset-target"=>"comment" %>
+    <%= form.submit class: "btn btn-primary"%>
+  <% end %>
+<% end %>
