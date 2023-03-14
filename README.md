@@ -14,7 +14,7 @@ Rails 7 code along with DHH.(using bootstrap)
     ```
 
 * WIP
-  - Active storage not working with turbo streams. Need to check
+  - ~~Active storage not working with turbo streams. Need to check~~ I was able to figure this out. Need to add default_url_options in the config. See this [commit](https://github.com/vkvikaskmr/rails7_demo_by_dhh/commit/62cbd6bffa1ddd220205fa97014ab2d7ef0bf46a)
 
 * Intalling bootstrap with rails 7 and importmaps. Found the simplest version which works with the default rails setup - sprockets and importmaps.
     - install bootstrap and sassc-rails gems in your broject
